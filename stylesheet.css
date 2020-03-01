@@ -115,11 +115,17 @@ footer{
     bottom: 0;
 }
 
-
-@media only screen and (max-width: 400px){
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (-webkit-device-pixel-ratio : 3) 
+{
     .section1, .section2, .section3, .section4{
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(300px, auto);
     }
 }
+    
